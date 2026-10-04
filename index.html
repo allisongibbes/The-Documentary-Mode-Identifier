@@ -1,142 +1,261 @@
-<div id="dp-wrapper" class="dp-wrapper dp-basic-bar variation-2" style="background-color: #22272e; color: #ffffff; padding: 10px;">
-    <header class="dp-header dp-colored-headings dp-border-style-none" style="background-color: #22272e;">
-        <h2 class="dp-heading dp-padding-direction-tblr dp-font-bangers" style="font-size: 45px; background-color: #dc0c02; padding-top: 15px; padding-bottom: 15px; border-bottom: 3px solid #dc0c02;"><span class="dp-header-pre dp-border-dir-all dp-border-style-none dp-font-maiden-orange" style="background-color: #dc0c02; color: #ffffff;"><span class="dp-header-pre-1">LEARN</span> </span> <span class="dp-header-title dp-padding-direction-tblr dp-font-bangers">The Truth of Non-Fiction: Documentary Film</span></h2>
-    </header>
-    <div class="dp-banner-image"><img src="https://utahtech.instructure.com/courses/1254156/files/205502852/preview" alt="Marwencol Banner.jpg" data-api-endpoint="https://utahtech.instructure.com/api/v1/courses/1254156/files/205502852" data-api-returntype="File" /></div>
-    <div style="margin: 24px 0;">
-        <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #dc0c02; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Recording Reality vs. Constructing Truth</h3>
-        <p>When most people sit down to watch a documentary, they assume they are viewing unadulterated, objective reality—a direct window into the world as it exists. However, documentary filmmaking is never a passive recording of events. From the moment a filmmaker chooses where to point the camera, what to leave out of the frame, and how to sequence clips in the editing room, non-fiction cinema becomes an act of creative interpretation and storytelling.</p>
-        <p>Throughout film history, documentary artists have grappled with the ethics of truth, the power of perspective, and the porous boundary between fact and fiction. Whether capturing the unscripted flow of everyday life, using miniature worlds to reconstruct psychological trauma, or staging dramatic reenactments, documentaries reveal that "truth" in cinema is always shaped by human authorship.</p>
-    </div>
-    <div style="border-left: 5px solid #dc0c02; background-color: #2d333b; padding: 20px 24px; margin: 24px 0; border-radius: 4px;">
-        <h3 class="dp-font-maiden-orange" style="font-size: 28px; color: #ffffff; margin-top: 0; margin-bottom: 12px; text-align: center; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Learning Objectives</h3>
-        <p style="text-align: center; margin-top: 0; margin-bottom: 14px;">The content on this page will support you in being able to:</p>
-        <ul style="max-width: 700px; margin: 0 auto; padding-left: 22px;">
-            <li><strong>Analyze</strong> the four major approaches to documentary filmmaking (Factual, Instructional, Persuasive, and Propaganda).</li>
-            <li><strong>Evaluate</strong> how technological and stylistic shifts—from Direct Cinema to self-reflexive inquiry—transformed the pursuit of cinematic truth.</li>
-            <li><strong>Examine</strong> how documentary art forms use creative construction, miniature recreation, and performance to process trauma and identity.</li>
-            <li><strong>Critique</strong> the ethical implications of staging, voiceover manipulation, and reenactments in non-fiction storytelling.</li>
-        </ul>
-    </div>
-    <div style="margin: 24px 0;">
-        <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #dc0c02; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Four Approaches to Non-Fiction Film</h3>
-        <p>Documentary films are organized around recordings of actual people, places, and events, but their underlying motivations vary widely. Textbook definitions classify non-fiction cinema into four primary approaches:</p>
-    </div>
-    <div class="dp-panels-wrapper dp-tabs-buttons-vertical dp-panel-active-color-dp-primary dp-panel-hover-color-dp-secondary" style="margin: 24px 0;">
-        <div class="dp-panel-group">
-            <h5 class="dp-panel-heading" style="font-size: 16px; background-color: #dc0c02;"><span class="dp-text-bold" style="color: #ffffff;">1. Factual Films</span></h5>
-            <div class="dp-panel-content" style="background-color: #5f6b7c; color: #ffffff; padding: 16px;">
-                <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #ffffff; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Factual Films</h3>
-                <p><strong>The Core Concept:</strong> Factual films present straightforward, unembellished information about the world without attempting to persuade the audience or mount a grand philosophical argument.</p>
-                <p><strong>The Goal:</strong> To document real events, historical footage, or scientific phenomena cleanly and objectively, functioning much like an illustrated encyclopedia entry or a historical archive.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentary Mode Identifier</title>
+    <style>
+        body {
+            background-color: #22272e;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            color: #f1e800;
+            margin-bottom: 5px;
+        }
+        p.instructions {
+            color: #adbac7;
+            margin-bottom: 20px;
+            text-align: center;
+            max-width: 600px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 700px;
+            gap: 20px;
+        }
+        .card-pool {
+            background-color: #2d333b;
+            border: 2px dashed #f1e800;
+            border-radius: 8px;
+            padding: 15px;
+            min-height: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .synopsis-card {
+            background-color: #444c56;
+            color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: grab;
+            font-size: 14px;
+            max-width: 280px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            user-select: none;
+            transition: background-color 0.2s;
+        }
+        .synopsis-card:active {
+            cursor: grabbing;
+        }
+        .categories-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .drop-zone {
+            background-color: #2d333b;
+            border: 2px solid #444c56;
+            border-radius: 8px;
+            padding: 15px;
+            min-height: 140px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transition: border-color 0.2s, background-color 0.2s;
+        }
+        .drop-zone.drag-over {
+            border-color: #f1e800;
+            background-color: #373e47;
+        }
+        .drop-zone h4 {
+            margin: 0 0 10px 0;
+            color: #f1e800;
+            font-size: 16px;
+            border-bottom: 1px solid #444c56;
+            padding-bottom: 5px;
+        }
+        .feedback {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            min-height: 24px;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        button {
+            background-color: #f1e800;
+            color: #22272e;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Documentary Mode Identifier</h2>
+    <p class="instructions">Drag and drop each synopsis card into the correct documentary approach category below, then click "Check Answers".</p>
+
+    <div class="container">
+        <!-- Card Pool -->
+        <div id="card-pool" class="card-pool" ondragover="allowDrop(event)" ondragleave="removeDropStyle(event)" ondrop="dropToPool(event)">
+            <!-- Cards will be injected via JS -->
+        </div>
+
+        <!-- Drop Zones -->
+        <div class="categories-grid">
+            <div class="drop-zone" data-category="Factual" ondragover="allowDrop(event)" ondragleave="removeDropStyle(event)" ondrop="drop(event)">
+                <h4>Factual</h4>
+            </div>
+            <div class="drop-zone" data-category="Instructional" ondragover="allowDrop(event)" ondragleave="removeDropStyle(event)" ondrop="drop(event)">
+                <h4>Instructional</h4>
+            </div>
+            <div class="drop-zone" data-category="Persuasive" ondragover="allowDrop(event)" ondragleave="removeDropStyle(event)" ondrop="drop(event)">
+                <h4>Persuasive</h4>
+            </div>
+            <div class="drop-zone" data-category="Propaganda" ondragover="allowDrop(event)" ondragleave="removeDropStyle(event)" ondrop="drop(event)">
+                <h4>Propaganda</h4>
             </div>
         </div>
-        <div class="dp-panel-group">
-            <h5 class="dp-panel-heading" style="font-size: 16px; background-color: #dc0c02;"><span class="dp-text-bold" style="color: #ffffff;">2. Instructional Films</span></h5>
-            <div class="dp-panel-content" style="background-color: #5f6b7c; color: #ffffff; padding: 16px;">
-                <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #ffffff; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Instructional Films</h3>
-                <p><strong>The Core Concept:</strong> Designed to educate or instruct viewers on how to perform specific tasks, master hobbies, or learn practical skills.</p>
-                <p><strong>The Goal:</strong> Ranging from cooking shows and fitness videos to safety manuals and DIY tutorials, instructional films prioritize clarity, utility, and step-by-step guidance over artistic flair.</p>
-            </div>
+
+        <div class="btn-container">
+            <button onclick="checkAnswers()">Check Answers</button>
+            <button onclick="resetActivity()">Reset</button>
         </div>
-        <div class="dp-panel-group">
-            <h5 class="dp-panel-heading" style="font-size: 16px; background-color: #dc0c02;"><span class="dp-text-bold" style="color: #ffffff;">3. Persuasive Films</span></h5>
-            <div class="dp-panel-content" style="background-color: #5f6b7c; color: #ffffff; padding: 16px;">
-                <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #ffffff; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Persuasive Films</h3>
-                <p><strong>The Core Concept:</strong> Unlike neutral factual records, persuasive documentaries actively advocate a specific social, political, or economic point of view.</p>
-                <p><strong>The Goal:</strong> To convince the audience to adopt a particular perspective, inspire social change, or expose systemic injustices by marshaling interviews, statistical evidence, and emotional musical scoring.</p>
-            </div>
-        </div>
-        <div class="dp-panel-group">
-            <h5 class="dp-panel-heading" style="font-size: 16px; background-color: #dc0c02;"><span class="dp-text-bold" style="color: #ffffff;">4. Propaganda Films</span></h5>
-            <div class="dp-panel-content" style="background-color: #5f6b7c; color: #ffffff; padding: 16px;">
-                <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #ffffff; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Propaganda Films</h3>
-                <p><strong>The Core Concept:</strong> Systematically produced by governments, political organizations, or authoritarian regimes to disseminate biased, deceptive, or heavily manipulated messaging.</p>
-                <p><strong>The Goal:</strong> To mold public opinion, suppress dissent, and manufacture compliance through emotional manipulation, selective omissions, and distorted framing disguised as objective truth.</p>
-            </div>
-        </div>
+
+        <div id="feedback" class="feedback"></div>
     </div>
-    <div style="margin: 24px 0;">
-        <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #dc0c02; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">The Evolution of Non-Fiction Formats &amp; Styles</h3>
-        <p>Beyond categorizing documentaries by their topic, film historians track how documentarians evolved their relationship with truth across distinct aesthetic eras:</p>
-        <ul style="padding-left: 22px;">
-            <li><strong>The Observational Era (Direct Cinema / Cinéma Vérité):</strong> Enabled by lightweight cameras and portable sound recorders in the mid-20th century, filmmakers abandoned heavy voiceover narration and scripted interviews to act as "flies on the wall," recording unscripted reality as it unfolds.</li>
-            <li><strong>The Self-Reflexive Turn:</strong> Filmmakers realized that the mere presence of a camera alters human behavior, proving that 100% objective truth is an illusion. Instead of hiding their influence, directors placed themselves in front of the lens as active participants, owning up to their personal biases.</li>
-            <li><strong>Hybrid and Creative Documentaries:</strong> Modern non-fiction cinema embraces artistic staging, animation, and constructed psychological spaces—proving that creative fabrication can sometimes reveal deeper emotional and psychological truths than literal observation ever could.</li>
-        </ul>
-    </div>
-    <div style="margin: 24px 0;">
-        <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #dc0c02; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Deep Dive Topics &amp; Ethical Considerations</h3>
-    </div>
-    <div class="dp-panels-wrapper dp-tabs-buttons-vertical dp-panel-active-color-dp-primary dp-panel-hover-color-dp-secondary" style="margin: 24px 0;">
-        <div class="dp-panel-group">
-            <h5 class="dp-panel-heading" style="font-size: 16px; background-color: #dc0c02;"><span class="dp-text-bold" style="color: #ffffff;">1. The Ethics of the Reenactment</span></h5>
-            <div class="dp-panel-content" style="background-color: #5f6b7c; color: #ffffff; padding: 16px;">
-                <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #ffffff; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">The Ethics of the Reenactment</h3>
-                <p>When real footage is missing or an event occurred in the past, documentarians often turn to dramatic reenactments. While helpful for visualizing historical events, reenactments blur the line between documentary and fiction. When does a recreation cross the line from helpful illustration to deceptive fabrication?</p>
-            </div>
-        </div>
-        <div class="dp-panel-group">
-            <h5 class="dp-panel-heading" style="font-size: 16px; background-color: #dc0c02;"><span class="dp-text-bold" style="color: #ffffff;">2. Archival Footage vs. Context Manipulation</span></h5>
-            <div class="dp-panel-content" style="background-color: #5f6b7c; color: #ffffff; padding: 16px;">
-                <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #ffffff; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Archival Footage vs. Context Manipulation</h3>
-                <p>Archival materials—newsreels, old photographs, and home movies—provide historical anchors. However, placing archival footage alongside a misleading voiceover or cutting it out of chronological context can entirely alter its original meaning.</p>
-            </div>
-        </div>
-        <div class="dp-panel-group">
-            <h5 class="dp-panel-heading" style="font-size: 16px; background-color: #dc0c02;"><span class="dp-text-bold" style="color: #ffffff;">3. Subject Exploitation &amp; Informed Consent</span></h5>
-            <div class="dp-panel-content" style="background-color: #5f6b7c; color: #ffffff; padding: 16px;">
-                <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #ffffff; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Subject Exploitation and Informed Consent</h3>
-                <p>Documentary subjects often open up their most vulnerable moments to filmmakers. This raises profound ethical questions: Does the filmmaker have a duty of care to their subjects after filming ends? Where does the line lie between public interest and psychological exploitation?</p>
-            </div>
-        </div>
-    </div>
-    <div style="margin: 24px 0;">
-        <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #dc0c02; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Interactive Learning Modules</h3>
-        <p>Explore the concepts of documentary modes, editing bias, and ethical decision-making using the interactive widgets below:</p>
-    </div>
-    <div class="dp-panels-wrapper dp-tabs-buttons-vertical dp-panel-active-color-dp-primary dp-panel-hover-color-dp-secondary" style="margin: 24px 0;">
-        <div class="dp-panel-group">
-            <h5 class="dp-panel-heading" style="font-size: 16px; background-color: #dc0c02;"><span class="dp-text-bold" style="color: #ffffff;">1. The Documentary Mode Identifier</span></h5>
-            <div class="dp-panel-content" style="background-color: #5f6b7c; color: #ffffff; padding: 16px;">
-                <h3 class="dp-font-maiden-orange" style="font-size: 28px; color: #ffffff; margin-top: 0; margin-bottom: 12px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">The Documentary Mode Identifier</h3>
-                <p>An interactive sorting tool where you test your ability to classify video clips and synopses into Factual, Instructional, Persuasive, or Propaganda categories.</p>
-                <div class="dp-embed-wrapper"><iframe style="border: medium none currentcolor;" title="Documentary Mode Identifier simulator" src="https://allisongibbes.github.io/Documentary-Mode-Identifier/" width="100%" height="500" loading="lazy"></iframe></div>
-            </div>
-        </div>
-        <div class="dp-panel-group">
-            <h5 class="dp-panel-heading" style="font-size: 16px; background-color: #dc0c02;"><span class="dp-text-bold" style="color: #ffffff;">2. Editing Truth Simulator</span></h5>
-            <div class="dp-panel-content" style="background-color: #5f6b7c; color: #ffffff; padding: 16px;">
-                <h3 class="dp-font-maiden-orange" style="font-size: 28px; color: #ffffff; margin-top: 0; margin-bottom: 12px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Editing Truth Simulator</h3>
-                <p>Manipulate cut points and background musical scoring on raw interview footage to observe how editing alters viewer perception and emotional response.</p>
-                <div class="dp-embed-wrapper"><iframe style="border: medium none currentcolor;" title="Editing Truth Simulator" src="https://allisongibbes.github.io/Editing-Truth-Simulator/" width="100%" height="500" loading="lazy"></iframe></div>
-            </div>
-        </div>
-        <div class="dp-panel-group">
-            <h5 class="dp-panel-heading" style="font-size: 16px; background-color: #dc0c02;"><span class="dp-text-bold" style="color: #ffffff;">3. Ethics Dilemma Matrix</span></h5>
-            <div class="dp-panel-content" style="background-color: #5f6b7c; color: #ffffff; padding: 16px;">
-                <h3 class="dp-font-maiden-orange" style="font-size: 28px; color: #ffffff; margin-top: 0; margin-bottom: 12px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Ethics Dilemma Matrix</h3>
-                <p>Step into the director's chair and make critical decisions regarding participant consent, manipulation of archival footage, and historical reenactments.</p>
-                <div class="dp-embed-wrapper"><iframe style="border: medium none currentcolor;" title="Ethics Dilemma Matrix simulator" src="https://allisongibbes.github.io/Ethics-Dilemma-Matrix/" width="100%" height="500" loading="lazy"></iframe></div>
-            </div>
-        </div>
-    </div>
-    <div style="margin: 24px 0;">
-        <h3 class="dp-font-maiden-orange" style="font-size: 32px; color: #dc0c02; margin-top: 0; margin-bottom: 14px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Case Study Preview: <em>Marwencol</em> (2010)</h3>
-        <p>As you prepare to watch <strong><em>Marwencol</em> (2010)</strong>, directed by Jeff Malmberg, you will encounter a documentary that pushes the boundaries of how non-fiction film represents reality and healing.</p>
-        <ul>
-            <li><strong>The Premise:</strong> After suffering a brutal, brain-damaging assault outside a bar that left him in a coma for nine days and wiped out his memory, Mark Hogancamp found himself unable to afford physical therapy or psychological counseling. To cope with his trauma, he retreated to his backyard and meticulously constructed "Marwencol"—a 1/6-scale World War II-era Belgian town populated by action figures representing himself, his friends, and his attackers.</li>
-            <li><strong>Constructing Reality:</strong> Mark acts out elaborate soap-opera storylines, violent battles, and emotional rescues in his miniature town, photographing the intricate dioramas to process his pain. The documentary weaves together Mark's real-life recovery, interviews with his friends and family, and stunning macro-photography of his toy town coming to life.</li>
-            <li><strong>Why It Fits Our Study:</strong> <em>Marwencol</em> challenges the traditional definition of a documentary. It asks: When a person constructs a fake, miniature world to process real psychological trauma, where does fantasy end and documentary truth begin? It is a profound exploration of art as therapy, memory reconstruction, and the ways we use creative performance to rebuild shattered lives.</li>
-        </ul>
-    </div>
-    <div style="margin: 24px 0;">
-        <h3 class="dp-font-maiden-orange" style="font-size: 28px; color: #dc0c02; margin-top: 0; margin-bottom: 10px; border-bottom: 2px solid #dc0c02; padding-bottom: 6px;">Conclusion</h3>
-        <p>Documentary film is much more than a historical record or an educational tool; it is a dynamic canvas for exploring human experience. By examining different approaches to non-fiction storytelling, evaluating ethical boundaries, and diving into deeply personal hybrid works like <em>Marwencol</em>, we learn to look past surface assumptions about "fact" and appreciate how cinematic form shapes our understanding of truth.</p>
-    </div>
-    <div style="border-left: 5px solid #dc0c02; background-color: #2d333b; padding: 20px 24px; margin: 24px 0; border-radius: 4px;">
-        <p style="font-size: 16px; margin-top: 0; margin-bottom: 6px;">Up Next: Watch <em>Marwencol</em> (2010)</p>
-        <p style="margin-bottom: 0;">Now that you understand the framework of documentary approaches, stylistic evolution, and the blurred lines of non-fiction truth, proceed to the watch page to experience Mark Hogancamp's remarkable story in <em>Marwencol</em>.</p>
-    </div>
-    <p>&nbsp;</p>
-</div>
+
+    <script>
+        const items = [
+            { id: 'card-1', text: 'An archival compilation of raw footage capturing hourly weather patterns across Antarctica.', category: 'Factual' },
+            { id: 'card-2', text: 'A step-by-step video demonstration detailing proper techniques for changing an automobile tire.', category: 'Instructional' },
+            { id: 'card-3', text: 'An investigative feature exposing corporate pollution in local watersheds using interviews and data graphs.', category: 'Persuasive' },
+            { id: 'card-4', text: 'A state-sponsored film glorifying the supreme leadership through heavily distorted statistics and emotive marching music.', category: 'Propaganda' }
+        ];
+
+        function init() {
+            const pool = document.getElementById('card-pool');
+            pool.innerHTML = '';
+            
+            // Shuffle items for variety
+            const shuffled = [...items].sort(() => Math.random() - 0.5);
+
+            shuffled.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'synopsis-card';
+                card.id = item.id;
+                card.draggable = true;
+                card.innerText = item.text;
+                card.dataset.category = item.category;
+                card.addEventListener('dragstart', drag);
+                pool.appendChild(card);
+            });
+
+            // Clear drop zones except h4 headers
+            document.querySelectorAll('.drop-zone').forEach(zone => {
+                const header = zone.querySelector('h4');
+                zone.innerHTML = '';
+                zone.appendChild(header);
+            });
+
+            document.getElementById('feedback').innerText = '';
+            document.getElementById('feedback').style.color = '#ffffff';
+        }
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+            const zone = ev.target.closest('.drop-zone') || ev.target.closest('.card-pool');
+            if (zone) zone.classList.add('drag-over');
+        }
+
+        function removeDropStyle(ev) {
+            const zone = ev.target.closest('.drop-zone') || ev.target.closest('.card-pool');
+            if (zone) zone.classList.remove('drag-over');
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData('text', ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            const zone = ev.target.closest('.drop-zone');
+            if (zone) {
+                zone.classList.remove('drag-over');
+                const cardId = ev.dataTransfer.getData('text');
+                const card = document.getElementById(cardId);
+                zone.appendChild(card);
+            }
+        }
+
+        function dropToPool(ev) {
+            ev.preventDefault();
+            const pool = document.getElementById('card-pool');
+            pool.classList.remove('drag-over');
+            const cardId = ev.dataTransfer.getData('text');
+            const card = document.getElementById(cardId);
+            pool.appendChild(card);
+        }
+
+        function checkAnswers() {
+            const zones = document.querySelectorAll('.drop-zone');
+            let correctCount = 0;
+            let totalPlaced = 0;
+
+            zones.forEach(zone => {
+                const category = zone.dataset.category;
+                const cards = zone.querySelectorAll('.synopsis-card');
+                cards.forEach(card => {
+                    totalPlaced++;
+                    if (card.dataset.category === category) {
+                        correctCount++;
+                    }
+                });
+            });
+
+            const feedback = document.getElementById('feedback');
+            if (totalPlaced < items.length) {
+                feedback.style.color = '#f1e800';
+                feedback.innerText = `Please sort all cards before checking! (${totalPlaced}/${items.length} placed)`;
+            } else if (correctCount === items.length) {
+                feedback.style.color = '#2ecc71';
+                feedback.innerText = 'Fantastic job! All classifications are correct.';
+            } else {
+                feedback.style.color = '#e74c3c';
+                feedback.innerText = `You got ${correctCount} out of ${items.length} correct. Review and try again!`;
+            }
+        }
+
+        function resetActivity() {
+            init();
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>
